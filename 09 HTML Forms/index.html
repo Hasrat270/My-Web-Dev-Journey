@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Forms</h1>
+    </header>
+
+    <main>
+      <form action="/" method="GET" >
+        <section>
+          <h2>Your personal details</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input type="text" name="user-name" id="username" required />
+            </li>
+            <li>
+              <label for="useremail">Your Email address</label>
+              <input type="email" id="useremail" required />
+            </li>
+            <li>
+              <label for="userpassword">Your Password</label>
+              <input type="password" id="userpassword" name="user-password" required placeholder="Enter your password" />
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>More Details</h2>
+          <ul>
+            <li>
+              <label for="userage">Your age</label>
+              <input type="number" step="1" id="userage" name="user-age" required min="18" max="100 />
+            </li>
+            <li>
+              <label for="userdob">Your Date of Birth</label>
+              <input type="date" id="userdob" name="user-dob" min="2007-07-26" />
+            </li>
+            <li>
+              <label for="usercountry">Your Country</label>
+              <select id="usercountry" name="user-country">
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="ca">Canada</option>
+                <option value="au">Australia</option>
+                <option value="in">India</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <label for="yourmessage">Your message</label>
+          <textarea
+            name="message"
+            id="yourmessage"
+            name="user-message"
+          ></textarea>
+        </section>
+
+        <section>
+  <h2>How should we verify your Account?</h2>
+  <ul>
+    <li class="form-control-inline">
+      <input
+        type="checkbox"
+        id="verify-email"
+        name="verify-method"
+        value="email"
+      />
+      <label for="verify-email">Via email</label>
+    </li>
+
+    <li class="form-control-inline">
+      <input
+        type="checkbox"
+        id="verify-phone"
+        name="verify-method"
+        value="phone"
+      />
+      <label for="verify-phone">Via phone</label>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>How should we contact you?</h2>
+  <ul>
+    <li class="form-control-inline">
+      <input
+        type="checkbox"
+        id="contact-email"
+        name="contact-method"
+        value="email"
+      />
+      <label for="contact-email">Email</label>
+    </li>
+    <li class="form-control-inline">
+      <input
+        type="checkbox"
+        id="contact-phone"
+        name="contact-method"
+        value="phone"
+      />
+      <label for="contact-phone">Phone</label>
+    </li>
+  </ul>
+</section>
+
+
+        <hr>
+
+        <section>
+          <div class="form-control-inline">
+            <input type="checkbox" id="agree-terms" name="terms" />
+            <label for="agree-terms">Agree to terms?</label>
+          </div>
+        </section>
+        
+        <section>
+          <button type="submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

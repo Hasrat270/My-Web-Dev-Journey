@@ -1,0 +1,8 @@
+Git Init
+Git Status
+git add test.txt
+Git add .
+git commit -m "added text.txt file"
+Git config --global --edit
+Git config --global user.name "White Devil"
+Git config --global user.email "Your@gmail.com"

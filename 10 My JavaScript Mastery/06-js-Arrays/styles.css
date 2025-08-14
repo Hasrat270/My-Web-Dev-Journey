@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+  color: #333;
+}
+h1 {
+  color: #444;
+  margin-bottom: 20px;
+}
+.section {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.section h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #007bff;
+}
+.section p {
+  margin: 0;
+  font-family: monospace;
+  color: #333;
+}

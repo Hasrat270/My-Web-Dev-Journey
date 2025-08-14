@@ -1,0 +1,38 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(170, 168, 170);
+    text-align: center;
+    color: rgb(85, 82, 76);
+    
+}
+
+body h1 {
+    text-decoration: underline rgb(255, 187, 0);
+    font-size: 2.5rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    width: 300px;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(236, 231, 231);
+    border: 1px solid black;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.cell:hover {
+    background-color: rgb(243, 178, 1);
+}
