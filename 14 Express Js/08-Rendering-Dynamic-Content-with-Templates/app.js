@@ -4,8 +4,8 @@ const express = require("express");
 
 const app = express();
 
-app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
@@ -13,9 +13,14 @@ app.use(express.urlencoded({ extended: false }));
 app.get("/", (request, response) => {
   response.render("index");
 });
-app.get("/restaurants", (request, response) => {
-  response.render("restaurants", { numberOfRestaurants: 5 });
+app.get("/restaurants", (req, res) => {
+  const filePath = path.join(__dirname, "data", "restaurants.json");
+
+  const fileData = fs.readFileSync(filePath);
+  const storedRestaurants = JSON.parse(fileData);
+  res.render("restaurants", { numberOfRestaurants: storedRestaurants.length });
 });
+
 app.get("/about", (request, response) => {
   response.render("about");
 });
