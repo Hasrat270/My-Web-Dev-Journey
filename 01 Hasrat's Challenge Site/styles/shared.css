@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(233, 215, 207);
+    text-align: center;
+    color: rgb(48, 39, 39);
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: rgb(167, 1, 78);
+}
+
+a:hover {
+    text-decoration: underline;
+}
