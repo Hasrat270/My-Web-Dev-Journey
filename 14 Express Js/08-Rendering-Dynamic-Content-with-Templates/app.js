@@ -14,7 +14,7 @@ app.get("/", (request, response) => {
   response.render("index");
 });
 app.get("/restaurants", (request, response) => {
-  response.render("restaurants");
+  response.render("restaurants", { numberOfRestaurants: 5 });
 });
 app.get("/about", (request, response) => {
   response.render("about");
