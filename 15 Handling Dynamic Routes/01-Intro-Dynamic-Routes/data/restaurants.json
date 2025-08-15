@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Quetta Hotel",
+        "address": "Manghopir",
+        "cuisine": "Mexican",
+        "website": "https://hotel.com",
+        "description": "It's awesome !"
+    },
+    {
+        "name": "Quetta Hotel",
+        "address": "North Nazimabad, Block-Q",
+        "cuisine": "Mexican",
+        "website": "https://hotel.com",
+        "description": "It's Best !first"
+    }
+]
