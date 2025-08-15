@@ -3,6 +3,7 @@ const path = require("path");
 const express = require("express");
 
 const app = express();
+const uuid = require("uuid");
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -38,8 +39,11 @@ app.get("/restaurants/:id", function (req, res) {
   res.render("restaurant-detail", { rid : restaurantId });
 });
 
+// This route will be triggered when the form is submitted
 app.post("/recommend", function (req, res) {
   const restaurant = req.body;
+  restaurant.id = uuid.v4();
+
   const filePath = path.join(__dirname, "data", "restaurants.json");
 
   const fileData = fs.readFileSync(filePath);
