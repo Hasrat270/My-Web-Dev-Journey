@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM restaurants WHERE type = "german"

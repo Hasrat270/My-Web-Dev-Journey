@@ -1,0 +1,1 @@
+select id, name from restaurants where type = "german"

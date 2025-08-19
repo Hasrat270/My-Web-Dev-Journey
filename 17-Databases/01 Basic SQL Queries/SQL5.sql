@@ -1,0 +1,1 @@
+insert into restaurants (name, type) VALUES ("Hacker Mealery", "Italian");
