@@ -20,7 +20,7 @@ app.use(function (error, req, res, next) {
   // Will become active whenever any route / middleware crashes
   console.log(error);
   res.status(500).render('500');
-});
+}); 
 
 app.listen(3000, function() {
   const serverAddress = 'http://localhost:3000';

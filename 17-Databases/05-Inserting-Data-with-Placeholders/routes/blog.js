@@ -81,7 +81,7 @@ router.get('/posts/:id/edit', async function (req, res) {
         WHERE id = ?
     `;
     const [posts] = await db.query(query, [req.params.id]);
-    res.render('update-post', { post: posts[0] });
+    res.render('update-post', { post: posts[0] }); 
 });
 
 router.post('/posts/:id/edit', async function (req, res) {
