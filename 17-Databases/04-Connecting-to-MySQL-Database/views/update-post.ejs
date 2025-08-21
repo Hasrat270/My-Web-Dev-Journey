@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <%- include('includes/head', { title: 'Add new post' }) %>
+  <%- include('includes/head', { title: 'Update post' }) %>
   <link rel="stylesheet" href="/styles/forms.css">
 </head>
 
 <body>
   <%- include('includes/header') %>
   <main>
-    <h1>Add a new post</h1>
+    <h1>Update post</h1>
     <form action="..." method="...">
       <div class="form-control">
         <label for="title">Title</label>
@@ -23,15 +23,7 @@
         <label for="content">Post Content</label>
         <textarea id="content" name="content" required rows="5"></textarea>
       </div>
-      <div class="form-control">
-        <label for="author">Select Author</label>
-        <select id="author" name="author">
-          <% for (const author of authors) { %>
-            <option value=" <%= author.id %> "><%= author.name %></option>
-          <% } %>
-        </select>
-      </div>
-      <button class="btn">Add Post</button>
+      <button class="btn">Update Post</button>
     </form>
   </main>
 </body>
