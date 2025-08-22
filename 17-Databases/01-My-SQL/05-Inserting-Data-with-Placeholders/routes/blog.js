@@ -58,6 +58,9 @@ router.get('/posts/:id', async function (req, res) {
     `;
     const [posts] = await db.query(query, [req.params.id]);
 
+    // Handle case where no posts are found for the given ID
+    // This is important to avoid errors when trying to access properties of undefined
+    // If no posts are found, we render a 404 page
     if (!posts || posts.length === 0) {
         return res.status(404).render('404');
     }
@@ -110,6 +113,10 @@ router.post('/posts/:id/delete', async function (req, res) {
     res.redirect('/posts');
 });
 
+// Here this is a catch-all route for handling 404 errors
+// If no other route matches, this will render a 404 page
+// This is useful for providing a user-friendly error page
+// when a user tries to access a non-existent route
 router.use(function (req, res) {
     res.status(404).render('404');
 });
