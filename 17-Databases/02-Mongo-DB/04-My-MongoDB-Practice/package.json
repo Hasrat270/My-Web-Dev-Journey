@@ -1,0 +1,19 @@
+{
+  "name": "04-my-mongodb-practice",
+  "version": "1.0.0",
+  "description": "Practicing Mongo-DB",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Hasrat Khan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongodb": "^6.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
