@@ -1,6 +1,6 @@
 #hero {
     height: 800px;
-    background-image: url(/images/places/Image1.jpg);
+    background-image: url(images/places/Image1.jpg);
     background-position: center;
     background-size: cover;
 }
