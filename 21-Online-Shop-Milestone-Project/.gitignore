@@ -1,0 +1,44 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.test
+.env.production
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Build output
+dist/
+build/
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor stuff
+.vscode/
+.idea/
+*.swp
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# TypeScript build
+*.tsbuildinfo
