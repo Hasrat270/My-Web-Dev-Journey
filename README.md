@@ -1,4 +1,4 @@
-"# 🌟 Hasrat Web Dev Mastery
+# 🌟 Hasrat Web Dev Mastery
 
 Welcome to my **JavaScript Mastery Repository** — a complete journey of learning and building modern web applications.
 
